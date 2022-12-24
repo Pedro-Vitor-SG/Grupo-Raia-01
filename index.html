@@ -5,37 +5,167 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Raia</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav class="nav container">
-      <img src="imgs/logo-raia.svg" alt="logo raia" />
-
-      <ul class="nav-list">
-        <li class="nav-list-item">
-          <a href="/">Contato</a>
-        </li>
-        <li class="nav-list-item">
-          <a href="/">Sobre Nós</a>
-        </li>
-        <li class="nav-list-item">
-          <a href="/">Serviços</a>
-        </li>
-      </ul>
-    </nav>
+    <header class="header">
+      <nav class="nav container">
+        <img src="imgs/logo-raia.svg" alt="logo raia" class="logo-raia" />
+        <i style="color: #fff" id="burguer" class="material-icons"> menu </i>
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a href="#services">Serviços</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#about">Sobre Nós</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#contact">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main class="main">
-        <section class="main-description">
-            <h1 class="title">
-            A Raia te conecta com excelentes profissionais disponíveis no mercado.
-            </h1>
-            <p class="text">
-            Conheça uma gama de profissionais que podem lhe ajudar a destacar seu
-            negócio.
-            </p>
-            <a href="/" class="btn-cta-main"></a>
-        </section>
-        <section class="main-image-right">
-            <img src="/imgs/tigger.png" alt="Tigger image main" />
-        </section>
+      <section class="presentation">
+        <div class="presentation-txt">
+          <h1 class="presentation-title">
+            A Raia te conecta com excelentes profissionais disponíveis no
+            mercado.
+          </h1>
+          <p class="text-section">
+            Conheça uma gama de profissionais que podem lhe ajudar a destacar
+            seu negócio.
+          </p>
+          <a class="presentation-btn" href="">Quero saber mais</a>
+        </div>
+        <div class="presentation-tigger-img"></div>
+      </section>
+
+      <section id="services" class="services container">
+        <h2 class="subtitle-section">Serviços</h2>
+        <p class="txt-section">
+          Aqui você encontra o serviço que deseja e profissionais capacitados
+          para realizá-los:
+        </p>
+
+        <div class="container-services">
+          <div class="type-services">
+            <img
+              src="/imgs/ilu-filter-insta.png"
+              alt="Ilustração filtro instagram"
+            />
+            <p>Criação de Filtro para Instagram</p>
+            <a class="services-btn" href="">Quero esse</a>
+          </div>
+
+          <div class="type-services">
+            <img src="/imgs/ilu-copy.png" alt="Ilustração Copywriting" />
+            <p>Copywriting</p>
+            <a class="services-btn" href="">Quero esse</a>
+          </div>
+
+          <div class="type-services">
+            <img
+              src="/imgs/ilu-social-media.png"
+              alt="Ilustração Social Media"
+            />
+            <p>Mídia Social</p>
+            <a class="services-btn" href="">Quero esse</a>
+          </div>
+
+          <div class="type-services">
+            <img
+              src="/imgs/ilu-creator-video.png"
+              alt="Ilustração Editor de Videos"
+            />
+            <p>Criação e Edição de Vídeos</p>
+            <a class="services-btn" href="">Quero esse</a>
+          </div>
+
+          <div class="type-services">
+            <img src="/imgs/ilu-developer.png" alt="Ilustração Desenvolvedor" />
+            <p>Sites, Lojas e Landing Pages</p>
+            <a class="services-btn" href="">Quero esse</a>
+          </div>
+
+          <div class="type-services">
+            <img
+              src="/imgs/ilu-traffic.png"
+              alt="Ilustração Gestão de Tráfego"
+            />
+            <p>Gestão de Tráfego</p>
+            <a class="services-btn" href="">Quero esse</a>
+          </div>
+
+          <div class="type-services">
+            <img src="/imgs/ilu-design.png" alt="Ilustração Design" />
+            <p>Design</p>
+            <a class="services-btn" href="">Quero esse</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <h2 class="subtitle-section">Sobre Nós</h2>
+        <h3 class="txt-section">
+          Somos uma agência digital especializada em Webdesign e
+          Desenvolvimento, Copywriting, Gestão de Tráfego, Marketing de Mídia
+          Social e outros. Temos conhecimento e experiência para lidar com
+          qualquer tipo de campanha de Marketing Digital. Do branding à
+          estratégia, podemos ajudá-lo em tudo. Se você procura por
+          profissionais que possam ajudá-lo com suas necessidades, somos a
+          escolha perfeita. Entre em contato conosco!
+        </h3>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2 class="subtitle-section">Contato</h2>
+        <a class="btn-wpp btn-social" href="">
+          <img src="/imgs/icon-wpp.svg" alt="icone WhatsApp" />
+          Nosso WhatsApp
+        </a>
+        <a class="btn-insta btn-social" href="https://www.instagram.com/gp.raia/">
+          <img src="/imgs/icon-insta.svg" alt="icone Instagram" /> @gp.raia
+        </a>
+      </section>
     </main>
+
+    <footer class="footer container">
+      <p>
+        Desenhado por
+        <a href="https://www.instagram.com/lianrch/"
+          >Lian Rocha (UI/UX Designer)</a
+        >
+        | Desenvolvido por
+        <a href="https://www.instagram.com/pedrov_21/">
+          Pedro Vitor (Desenvolvedor Front-End)</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      let burguer = document.querySelector("#burguer");
+      let navlist = document.querySelector(".nav-list");
+      let navItens = document.querySelectorAll(".nav-list-item");
+
+      burguer.addEventListener("click", () => {
+        console.log(burguer);
+
+        if (burguer.classList.contains("active")) {
+          burguer.classList.remove("active");
+          burguer.innerHTML = "menu";
+
+          console.log(true);
+        } else {
+          console.log(false);
+          burguer.classList.add("active");
+          burguer.innerHTML = "close";
+        }
+      });
+    </script>
   </body>
 </html>
