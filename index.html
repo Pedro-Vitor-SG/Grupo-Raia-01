@@ -15,7 +15,7 @@
     <header class="header">
       <nav class="nav container">
         <img src="imgs/logo-raia.svg" alt="logo raia" class="logo-raia" />
-        <i style="color: #fff" id="burguer" class="material-icons"> menu </i>
+        <i style="color: #fff" id="burguer" class="material-icons burguer-btn"> menu </i>
         <ul class="nav-list">
           <li class="nav-list-item">
             <a href="#services">Serviços</a>
@@ -155,14 +155,14 @@
       burguer.addEventListener("click", () => {
         console.log(burguer);
 
-        if (burguer.classList.contains("active")) {
-          burguer.classList.remove("active");
+        if (navlist.classList.contains("active")) {
+          navlist.classList.remove("active");
           burguer.innerHTML = "menu";
 
           console.log(true);
         } else {
           console.log(false);
-          burguer.classList.add("active");
+          navlist.classList.add("active");
           burguer.innerHTML = "close";
         }
       });
