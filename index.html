@@ -11,6 +11,8 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="imgs/favicon-32x32.png" type="image/x-icon">
+
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -127,13 +129,13 @@
 
       <section id="contact" class="contact">
         <h2 class="subtitle-section">Contato</h2>
-        <a class="btn-wpp btn-social" href="">
+        <a class="btn-wpp btn-social" href="https://wa.me/message/XSX3ECQLWBVDB1" target="_blank">
           <img src="/imgs/icon-wpp.svg" alt="icone WhatsApp" />
           Nosso WhatsApp
         </a>
         <a
           class="btn-insta btn-social"
-          href="https://www.instagram.com/gp.raia/"
+          href="https://www.instagram.com/gp.raia/" target="_blank"
         >
           <img src="/imgs/icon-insta.svg" alt="icone Instagram" /> @gp.raia
         </a>
@@ -143,35 +145,14 @@
     <footer class="footer container">
       <p>
         Desenhado por
-        <a href="https://www.instagram.com/lianrch/"
+        <a href="https://www.instagram.com/lianrch/" target="_blank"
           >Lian Rocha (UI/UX Designer)</a
         >
         | Desenvolvido por
-        <a href="https://www.instagram.com/pedrov_21/">
+        <a href="https://www.instagram.com/pedrov_21/" target="_blank">
           Pedro Vitor (Desenvolvedor Front-End)</a
         >
       </p>
     </footer>
-
-    <script>
-      let burguer = document.querySelector("#burguer");
-      let navlist = document.querySelector(".nav-list");
-      let navItens = document.querySelectorAll(".nav-list-item");
-
-      burguer.addEventListener("click", () => {
-        console.log(burguer);
-
-        if (navlist.classList.contains("active")) {
-          navlist.classList.remove("active");
-          burguer.innerHTML = "menu";
-
-          console.log(true);
-        } else {
-          console.log(false);
-          navlist.classList.add("active");
-          burguer.innerHTML = "close";
-        }
-      });
-    </script>
   </body>
 </html>
