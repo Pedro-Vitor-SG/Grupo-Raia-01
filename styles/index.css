@@ -190,7 +190,10 @@ body {
   margin: 50px auto 100px;
   font-weight: 100;
   text-align: center;
-  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 .footer a {
   font-weight: 500;
